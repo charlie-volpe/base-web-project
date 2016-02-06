@@ -8,6 +8,7 @@ var BaseEnum = {
   }
 }
 
+// State Member Variables
 var currentState;
 var runState = false;
 
