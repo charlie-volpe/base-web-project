@@ -4,7 +4,7 @@ Base Web Project to clone from.
 Basic web project that will have different files to build off of.
 
 HTML:
-* index.html is a base HTML file that is minimum needed to run some styled js code.
+* index.html is a base HTML file that is minimum needed to run a styled web page with js code.
 
 CSS:
 * normalize.css is code from: https://necolas.github.io/normalize.css/ to help show the code similarly in all browsers.
