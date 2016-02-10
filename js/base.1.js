@@ -1,9 +1,9 @@
-/* base.js
+/* base.1.js
 *  
 *  Author: Volpe 2016
 *  
 *  Description:
-*  Base for state machine.
+*  Base for state machine. My original idea.
 */
 
 // State Enum
