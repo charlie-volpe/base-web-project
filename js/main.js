@@ -1,3 +1,11 @@
+/* main.js
+*  
+*  Author: Volpe 2016
+*  
+*  Description:
+*  Base js file.
+*/
+
 // On Document Load
 $(function(){
   Start();

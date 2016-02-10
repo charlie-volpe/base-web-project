@@ -1,3 +1,11 @@
+/* base.js
+*  
+*  Author: Volpe 2016
+*  
+*  Description:
+*  Base for state machine.
+*/
+
 // State Enum
 var BaseEnum = {
   idle: 0,
