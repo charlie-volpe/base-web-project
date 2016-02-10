@@ -18,5 +18,5 @@ Entity.prototype.printName = function() {
 }
 
 // Test code
-var entity1 = new Entity('entity1');
-entity1.printName();
+// var entity1 = new Entity('entity1');
+// entity1.printName();
