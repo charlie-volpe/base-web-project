@@ -13,6 +13,6 @@ CSS:
 JS:
 * jquery-2.2.0.js is code from: https://jquery.com/ to add jQuery functionality to the project.jquery
 * main.js is base code to use for basic Start() and Update() functions. Update() has deltaTime passed through.
-* base.1.js is base code to use for state mechanics. You can enter, exit, switch and update states.
-* base.2.js is base code to use for state mechanics made based on feedback.
+* base.js is base code to use for state mechanics. You can enter, exit, switch and update states.
+* base_fb.js is base code to use for state mechanics made based on feedback.
 * entity.js is base code for an object.
