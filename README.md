@@ -15,4 +15,5 @@ JS:
 * main.js is base code to use for basic Start() and Update() functions. Update() has deltaTime passed through.
 * base.js is base code to use for state mechanics. You can enter, exit, switch and update states.
 * base_fb.js is base code to use for state mechanics made based on feedback.
-* entity.js is base code for an object that shows construction and inheritance.
+* oops.js is base code for an object that shows construction and inheritance.
+* class.js is base code for a class that shows construction and inheritance.

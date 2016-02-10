@@ -1,4 +1,4 @@
-/* entity.js
+/* oops.js
 *  
 *  Author: Volpe 2016
 *  
