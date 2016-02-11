@@ -36,15 +36,15 @@ var lastTick = Date.now();
 
 function Tick() {
   var now = Date.now();
-  var dt = now - lastTick;
+  var fdt = now - lastTick;
   lastTick = now;
 
-  Update(dt);
+  Update(fdt);
 }
 
 // Update with deltaTime
-function Update(dt) {
-  UpdateState(dt);
+function Update(fdt) {
+  UpdateState(fdt);
 }
 
 // States
@@ -87,22 +87,22 @@ function SwitchState(baseEnum) {
 }
 
 // States Update
-function UpdateState(dt) {
+function UpdateState(fdt) {
   if( runState ) {
     if(currentState == BaseEnum.idle) {
-      UpdateIdle(dt);
+      UpdateIdle(fdt);
     } else if (currentState == BaseEnum.init) {
-      UpdateInit(dt);
+      UpdateInit(fdt);
     }
   }
 }
 
 // Update for Idle
-function UpdateIdle(dt) {
+function UpdateIdle(fdt) {
   console.log("Update Idle");
 }
 
 // Update for Init
-function UpdateInit(dt) {
+function UpdateInit(fdt) {
   console.log("Update Init");
 }

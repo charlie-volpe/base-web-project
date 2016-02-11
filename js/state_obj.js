@@ -92,15 +92,15 @@ var lastTick = Date.now();
 
 function Tick() {
   var now = Date.now();
-  var dt = now - lastTick;
+  var fdt = now - lastTick;
   lastTick = now;
 
-  Update(dt);
+  Update(fdt);
 }
 
 // Update with deltaTime
-function Update(dt) {
-  UpdateState(dt);
+function Update(fdt) {
+  UpdateState(fdt);
 }
 
 // State change functions
@@ -111,7 +111,7 @@ function EnterState() {
 }
 
 // States Update
-function UpdateState(dt) {
+function UpdateState(fdt) {
   if( runState ) {
     currentState.Update();
   }

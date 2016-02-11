@@ -21,13 +21,13 @@ var lastTick = Date.now();
 
 function Tick() {
   var now = Date.now();
-  var dt = now - lastTick;
+  var fdt = now - lastTick;
   lastTick = now;
 
-  Update(dt);
+  Update(fdt);
 }
 
 // Update with deltaTime
-function Update(dt) {
+function Update(fdt) {
 
 }

@@ -8,7 +8,7 @@
 
 
 // Create Sprite Object
-var Sprite = function(name, url, uWidth, uHeight, rows, cols) {
+var Sprite = function(name, url, iunitWidth, iunitHeight, irows, icols) {
   this.name = name;
   this.url = url;
   this.uWidth = uWidth;
@@ -17,6 +17,14 @@ var Sprite = function(name, url, uWidth, uHeight, rows, cols) {
   this.cols = cols;
 }
 
-var SpriteAnim = function(name, sprite, start, end) {
-  
+var SpriteAnim = function(name, sprite, istart, iend, ifps) {
+  this.name = name;
+  this.sprite = sprite;
+  this.start = start;
+  this.end = end;
+  this.fps = fps;
+}
+
+SpriteAnim.prototype.Play = function(bLoop) {
+
 }
