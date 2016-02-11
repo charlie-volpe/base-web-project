@@ -1,6 +1,6 @@
 /* state_enum.js
 *  
-*  Author: Volpe 2016
+*  Author: Charlie Volpe Feb 6, 2016
 *  
 *  Description:
 *  Base for state machine. My original idea.

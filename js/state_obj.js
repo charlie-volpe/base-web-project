@@ -1,6 +1,6 @@
 /* state_obj.js
 *  
-*  Author: Volpe 2016
+*  Author: Charlie Volpe Feb 10, 2016
 *  
 *  Description:
 *  Base for state machine. Tweaked from feedback.
@@ -8,20 +8,20 @@
 
 // Base state object
 var State = function(name) {
-    this.name = name;
+  this.name = name;
 }
 
 // State functions
 State.prototype.Enter = function() {
-    console.log(this.name + " :: Enter()");
+  console.log(this.name + " :: Enter()");
 }
 
 State.prototype.Update = function() {
-    console.log(this.name + " :: Update()");
+  console.log(this.name + " :: Update()");
 }
 
 State.prototype.Exit = function() {
-    console.log(this.name + " :: Exit()");
+  console.log(this.name + " :: Exit()");
 }
 
 // Idle State & Functions

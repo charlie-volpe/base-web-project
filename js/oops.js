@@ -1,6 +1,6 @@
 /* oops.js
 *  
-*  Author: Volpe 2016
+*  Author: Charlie Volpe Feb 10, 2016
 *  
 *  Description:
 *  Object oriented programming starter (oops).
@@ -8,12 +8,12 @@
 
 // Create basic Entity
 var Entity = function(name) {
-	this.name = name;
+  this.name = name;
 }
 
 // Give Entity a print name function
 Entity.prototype.printName = function() {
-	console.log(this.name);
+  console.log(this.name);
 }
 
 // Test Entity
@@ -24,15 +24,15 @@ entity1.printName();
 
 // Inherited from Entity
 function Inherited(name, type) {
-    Entity.call(this, name);
-    this.type = type;
+  Entity.call(this, name);
+  this.type = type;
 }
 
 Inherited.prototype = Object.create(Entity.prototype);
 Inherited.prototype.constructor = Inherited;
 
 Inherited.prototype.printName = function() {
-    console.log(this.name + " of type: " + this.type);
+  console.log(this.name + " of type: " + this.type);
 }
 
 // Test Inherited

@@ -1,6 +1,6 @@
 /* class.js
 *  
-*  Author: Volpe 2016
+*  Author: Charlie Volpe Feb 10, 2016
 *  
 *  Description:
 *  Testing out classes in js.
@@ -14,23 +14,23 @@
 
 // Base class
 class Thing {
-    constructor(name) {
-        this.name = name;
-    }
-    
-    printName() {
-        console.log(this.name);
-    }
+  constructor(name) {
+    this.name = name;
+  }
+
+  printName() {
+    console.log(this.name);
+  }
 }
 
 // Inherited class
 class Doop extends Thing {
-    printName() {
-        // Calls parent version
-        super.printName();
-        
-        console.log("doop!");
-    }
+  printName() {
+    // Calls parent version
+    super.printName();
+    
+    console.log("doop!");
+  }
 }
 
 // Test the different classes

@@ -1,6 +1,6 @@
 /* main.js
 *  
-*  Author: Volpe 2016
+*  Author: Charlie Volpe Feb 5, 2016
 *  
 *  Description:
 *  Base js file.
