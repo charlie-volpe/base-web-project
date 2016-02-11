@@ -9,6 +9,8 @@
 // Classes must be used in strict mode... makes
 // me thing that objects might be a better option.
 "use strict";
+// Although only Opera Mini of the current browsers doesn't have support.
+// http://caniuse.com/#feat=use-strict
 
 // Base class
 class Thing {
