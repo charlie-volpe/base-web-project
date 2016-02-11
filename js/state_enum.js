@@ -1,4 +1,4 @@
-/* base.js
+/* state_enum.js
 *  
 *  Author: Volpe 2016
 *  

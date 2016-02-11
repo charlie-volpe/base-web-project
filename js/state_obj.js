@@ -1,4 +1,4 @@
-/* base_fb.js
+/* state_obj.js
 *  
 *  Author: Volpe 2016
 *  
@@ -6,10 +6,12 @@
 *  Base for state machine. Tweaked from feedback.
 */
 
+// Base state object
 var State = function(name) {
     this.name = name;
 }
 
+// State functions
 State.prototype.Enter = function() {
     console.log(this.name + " :: Enter()");
 }
@@ -22,9 +24,45 @@ State.prototype.Exit = function() {
     console.log(this.name + " :: Exit()");
 }
 
+// Idle State & Functions
 var idleState = new State('idle');
+
+idleState.Enter = function() {
+  State.prototype.Enter.call(this);
+  // New code here
+  console.log("ENTER IDLE ONLY!!!");
+}
+
+idleState.Update = function() {
+  State.prototype.Update.call(this);
+  // New code here
+}
+
+idleState.Exit = function() {
+  State.prototype.Update.call(this);
+  // New code here
+}
+
+// Init State & Functions
 var initState = new State('init');
 
+initState.Enter = function() {
+  State.prototype.Enter.call(this);
+  // New code here
+  console.log("SPECIAL IN INIT!!!");
+}
+
+initState.Update = function() {
+  State.prototype.Update.call(this);
+  // New code here
+}
+
+initState.Exit = function() {
+  State.prototype.Update.call(this);
+  // New code here
+}
+
+// State member variables
 var currentState = idleState;
 var runState = false;
 
@@ -65,7 +103,8 @@ function Update(dt) {
   UpdateState(dt);
 }
 
-// States
+// State change functions
+// States Enter
 function EnterState() {
   currentState.Enter();
   runState = true;
