@@ -11,20 +11,22 @@
 var Sprite = function(name, url, iunitWidth, iunitHeight, irows, icols) {
   this.name = name;
   this.url = url;
-  this.uWidth = uWidth;
-  this.uHeight = uHeight;
-  this.rows = rows;
-  this.cols = cols;
+  this.iuWidth = iuWidth;
+  this.iuHeight = iuHeight;
+  this.irows = irows;
+  this.icols = icols;
 }
 
-var SpriteAnim = function(name, sprite, istart, iend, ifps) {
+var SpriteAnim = function(name, sprite, istart, iend, ispeed) {
   this.name = name;
   this.sprite = sprite;
-  this.start = start;
-  this.end = end;
-  this.fps = fps;
+  this.istart = istart;
+  this.iend = iend;
+  this.ispeed = ispeed;
 }
 
 SpriteAnim.prototype.Play = function(bLoop) {
+  for(var i = this.istart; i<this.iend; i++) {
 
+  }
 }
