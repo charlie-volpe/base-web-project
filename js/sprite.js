@@ -11,8 +11,8 @@
 var Sprite = function(name, url, iunitWidth, iunitHeight, irows, icols) {
   this.name = name;
   this.url = url;
-  this.iuWidth = iuWidth;
-  this.iuHeight = iuHeight;
+  this.iunitWidth = iunitWidth;
+  this.iunitHeight = iunitHeight;
   this.irows = irows;
   this.icols = icols;
 }
