@@ -17,15 +17,16 @@ var Sprite = function(name, url, iunitWidth, iunitHeight, irows, icols) {
   this.icols = icols;
 }
 
-var SpriteAnim = function(name, sprite, istart, iend, ispeed) {
+var SpriteAnim = function(name, sprite, bloop, istart, iend, ispeed) {
   this.name = name;
   this.sprite = sprite;
+  this.bloop = bloop;
   this.istart = istart;
   this.iend = iend;
   this.ispeed = ispeed;
 }
 
-SpriteAnim.prototype.Play = function(bLoop) {
+SpriteAnim.prototype.Play = function() {
   for(var i = this.istart; i<this.iend; i++) {
 
   }
