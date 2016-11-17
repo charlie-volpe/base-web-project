@@ -15,3 +15,6 @@ JS:
 * state_obj.js is base code to use for state mechanics made with objects. (@chris_deleon's feedback)
 * oops.js is base code for an object that shows construction and inheritance.
 * class.js is base code for a class that shows construction and inheritance.
+
+## WIP
+* sprite.js - will be some base code for a animating sprite
