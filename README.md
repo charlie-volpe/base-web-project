@@ -17,4 +17,4 @@ JS:
 * class.js is base code for a class that shows construction and inheritance.
 
 ## WIP
-* sprite.js - will be some base code for a animating sprite
+* sprite.js - will be some base code for an animating sprite
