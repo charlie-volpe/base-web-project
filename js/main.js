@@ -21,7 +21,7 @@ var lastTick = Date.now();
 
 function Tick() {
   var now = Date.now();
-  var fdt = now - lastTick;
+  var fdt = (now - lastTick) / 1000;
   lastTick = now;
 
   Update(fdt);
